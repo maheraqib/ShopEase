@@ -44,10 +44,18 @@
     background-color: transparent;
 }
 
+
 #navbar li a:hover,
 #navbar li a.active{
     color: #FF5722;
     transition: 0.3s ease-in-out;
+}
+
+#mobile{
+    display: none;
+}   
+#close{
+    display: none;
 }
   /* navbar has been ended */
 
@@ -383,6 +391,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 15px 15px;
+    gap:    20px;
 }
 
 #banner3 .banner-box{
@@ -433,3 +442,226 @@
     color: #FFFFFF;
 }
 
+#Newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(images/newsletter\ banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#Newsletter h4{
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    padding-bottom: 10px;
+}
+
+#Newsletter p{
+    font-size: 15px;
+    font-weight: 400;
+    color: #080808;
+}
+
+#Newsletter span{
+    color: white;
+}
+
+#Newsletter .form{
+    display: flex;
+    width: 30%;
+}
+
+#Newsletter input{
+    height: 3rem;
+    padding: 0 1em;
+    font-size: 14px;
+    width: 60%;
+    border-radius: 2px;
+    border: transparent;
+    outline: none;
+    border-top-right-radius: 0 ;
+    border-bottom-right-radius: 0 ;
+}
+
+#Newsletter button{
+    padding: 10px 10px;
+    background-color: #088178;
+    color: white;
+    font-size: 15px;
+    border: transparent;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-top-left-radius: 0 ;
+    border-bottom-left-radius: 0 ;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer .col .add{
+    padding-bottom: 10px;
+}
+
+footer .logo{
+    height: 70px;
+    padding-bottom: 50px;
+}
+
+footer h4{
+    font-size: 20px;
+    font-family: Arial;
+    padding-bottom: 20px;
+}
+
+footer p{
+    font-size: 15px;
+    font-family: Arial;
+    margin: 0 0 5px 0;
+}
+
+footer a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #0056D2;
+    margin-bottom: 10px;
+}
+
+footer .Follow{
+    margin-top: 20px;
+}
+
+footer .Follow i{
+    color: #333333;
+    padding-right: 8px;
+    cursor: pointer;
+}
+
+footer .Follow i:hover{
+    color: #07f3cc;
+}
+
+footer .col a:hover{
+    color: #115c4f;
+    transition: o.3s ease-in;
+}
+ .Copyright P{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 5px;
+ }
+
+
+
+/* media query */
+
+@media (max-width: 768px) {
+    .section-p1 {
+        padding: 40px 40px;
+    }
+
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        max-width: 250px;
+        background-color: #F9F9F9;
+        box-shadow: 0 10px 10px black;
+        padding: 60px 0 15px 10px;
+    }
+
+    #navbar.active{
+        right: 0px;
+
+    }
+
+    #navbar li a {
+        text-decoration: none;
+        font-size: 17px;
+        font-family: Verdana;
+        color: #383333;
+        background-color: transparent;
+        overflow: hidden;
+    }
+
+    #mobile{
+        padding-right: 30px;
+        display: flex;
+        align-items: center;
+    }
+
+    #mobile i{
+        color: #07f3cc;
+        display: inline;
+        padding-right: 5px;
+    }
+
+    #close{
+        position: absolute;
+        display: initial;
+        top: 30px;
+        left: 30px;
+        color: #080808;
+        font-size: 25px;
+    }
+    #bar{
+        cursor: pointer;
+    }
+
+    #lg-bag{
+        display: none;
+    }
+    #hero {
+        background-image: url(images/mobile-background\ image.jpg);
+        display: flex;
+        flex-direction: column;
+        color: #F9F9F9;
+    }
+
+    #hero h2{
+        color:greenyellow;
+    }
+    #feature {
+        justify-content: center;
+    }
+
+    #feature .fe-box {
+       margin: 15px 15px;
+       padding-left: 0;
+       padding-right: 0;
+    }
+    #product1 h2 {
+        font-size: 30px;
+        font-family: Arial;
+    }
+
+    #product1 .pro-container {
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+        flex-wrap: wrap;
+
+        #product1 .pro {
+            margin: 15px;
+        }
+
+    }
+}
