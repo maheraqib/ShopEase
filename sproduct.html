@@ -29,7 +29,7 @@
 
     <section id="prodetalis" class="section-p1">
         <div class="single-pr-image">
-            <img src="images/product1.png" width="100%" id="main-image" alt="main image">
+            <img src="images/product1.png" width="100%" id="mainimage" alt="main image">
 
             <div class="small-image-group">
                 <div class="small-image-col">
@@ -187,6 +187,20 @@
             <p>Copyright © 2024 | All Rights Reserved</p>
         </div>
         
+        <script>
+            var mainimg = document.getElementById("mainimage");
+            var smallimg = document.getElementsByClassName("small-img");
+
+            smallimg[0].onclick = function (){
+                mainimage.src = smallimg[0].src;
+            }
+            smallimg[1].onclick = function (){
+                mainimage.src = smallimg[1].src;
+            }
+            smallimg[2].onclick = function (){
+                mainimage.src = smallimg[2].src;
+            }
+        </script>
 
 </body>
 </html>
