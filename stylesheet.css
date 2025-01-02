@@ -208,7 +208,7 @@
 }
 
 #product1 h2{
-    font-size: 80px;
+    font-size: 50px;
     font-family:Arial;
 }
 
@@ -565,8 +565,135 @@ footer .col a:hover{
     padding-bottom: 5px;
  }
 
+/* Home page ended */
+
+/* Products page starts */
+
+#page-header{
+    background-image: url(product-page/product-header.avif);
+    height: 70vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #f2e400;
+    font-size: 25px;
+}
+
+#page-header p{
+    color: #f2e400;
+    font-size: 20px;
+}
+
+#pagination{
+    text-align: center;
+}
+
+#pagination a{
+    text-decoration: none;
+    background-color: #0056D2;
+    padding: 15px 20px;
+    color: white;
+    font-weight: 400;
+    border-radius: 3px;
+}
+
+/* product page ended */
+
+/* Single product page start */
+
+#prodetalis{
+    display: flex;
+    margin-top: 18px;
+}
+
+#prodetalis .single-pr-image{
+    width: 30%;
+    margin-right: 50px;
+    border: 1px solid rgb(228, 212, 212);
+    border-radius: 4px;
+    padding: 10px 10px;
+}
+
+.small-image-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-image-col{
+    flex-basis: 31%;
+    cursor: pointer;
+}
+
+#prodetalis .single-pr-details{
+    width: 55%;
+    padding-top: 70px;
+    padding-left: 20px;
+}
+
+.single-pr-details h6{
+    font-size: 15px;
+    padding-bottom: 100px;
+}
+
+.single-pr-details h3{
+    font-size: 18px;
+    padding-bottom: 7px;
+}
+
+.single-pr-details h2{
+    padding-bottom: 7px;
+}
+
+.single-pr-details h4{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size:  25px;
+}
+
+#prodetalis .single-pr-details select{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+#prodetalis .single-pr-details input{
+    width: 40px;
+    height: 40px;
+    padding-left: 16px;
+    margin-right: 7px;
+}
+
+.single-pr-details button{
+    padding: 11px 11px;
+    background-color: #176d67;
+    border: transparent;
+    color: white;
+}
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 /* media query for iPad */
 
 @media (max-width: 768px) {

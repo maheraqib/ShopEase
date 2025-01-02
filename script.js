@@ -11,3 +11,12 @@ if (close)  { close.addEventListener('click', () => {
     nav.classList.remove('active');
   });
 }
+
+// button click function event
+
+const form = document.querySelector(".form");
+
+function changeColor() {
+  form.style.color = "red";
+}
+  
