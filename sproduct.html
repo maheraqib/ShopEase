@@ -15,6 +15,7 @@
                 <li><a href="http://127.0.0.1:5500/index.html">Home</a></li>
                 <li><a class="active" href="http://127.0.0.1:5500/products.html">Products</a></li>
                 <li><a href="about.html">About Us</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
                 <li><a href="content.html">Contact</a></li>
                 <li id="lg-bag"><a href="cart.html" ><i class="fa-solid fa-cart-plus"></i></a></li>
                 <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
@@ -141,7 +142,7 @@
         </div>
         <div class="form">
             <input type="text" placeholder="Enter Yor Email">
-            <button>Sign Up</button>
+            <button onclick="changeColor()">Sign Up</button>
         </div>
     </section>
 
@@ -188,6 +189,13 @@
         </div>
         
         <script>
+
+            const form = document.getElementsByClassName("form");
+
+            function changeColor() {
+                form.styly.color = "black";
+            }
+
             var mainimg = document.getElementById("mainimage");
             var smallimg = document.getElementsByClassName("small-img");
 
